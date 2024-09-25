@@ -1,1 +1,38 @@
+# macOS files
 .DS_Store
+
+# Terraform files
+*.tfstate
+*.tfstate.backup
+*.tfvars
+crash.log
+override.tf
+override.tf.json
+*.tfplan
+
+# Local terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Ignore specific provider builds
+infra/terraform/.terraform/providers/
+infra/terraform/.terraform/
+
+# Lock file
+*.lock
+
+# Ignore within infra/terraform
+infra/terraform/.terraform/
+infra/terraform/.terraform.lock.hcl
+infra/terraform/terraform.tfstate
+infra/terraform/terraform.tfstate.backup
+infra/terraform/terraform.tfplan
+
+# Ignore logs and crash files
+*.log
+crash.*
+
+# Miscellaneous
+.idea/
+.vscode/
+*.iml
